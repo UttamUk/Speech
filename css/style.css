@@ -64,6 +64,14 @@ body {
   transform-origin: center;
 }
 
+@media (max-width: 575.98px) {
+  .home #mic {
+    width: 250px;
+    height: 250px;
+    border-width: 51px;
+  }
+}
+
 .home #mic::before {
   content: "";
   position: absolute;
@@ -78,6 +86,12 @@ body {
           transform-origin: center;
   -webkit-animation: ror 5s linear infinite;
           animation: ror 5s linear infinite;
+}
+
+@media (max-width: 575.98px) {
+  .home #mic::before {
+    border-width: 51.5px;
+  }
 }
 
 .home #mic i {
